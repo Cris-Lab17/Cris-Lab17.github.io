@@ -1,0 +1,160 @@
+To add a comment box to your HTML page, you can include a form with a textarea for comments and a submit button. Below is the updated HTML with the addition of a comment box:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MAQUINAS AL ASFALTO</title>
+  <style>
+    /* Estilos CSS para hacer el programa llamativo y colorido */
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+       'Lucida Sans', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    div{
+     background-color: #000000;
+     color: #fff;
+     padding: 1px 0;
+     text-align: center;
+    }
+    nav{
+    background-color: #000000;  
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+    }
+    p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    background-color: rgb(65, 78, 78);
+    color: #ffffff;
+    padding: 70px 0;
+    font-size: 20px ;
+    text-align: center;
+    }
+    .motorcycle {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .motorcycle img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .motorcycle h2 {
+      color: #007bff;
+    }
+    .motorcycle p {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    a{
+    color: #0066ff;  
+    }
+    body{
+      background-color: #000000;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    ul {
+      font-family:Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      text-align:left;
+      font-size: 15px;
+    }
+    .comment-box {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .comment-box h2 {
+      color: #007bff;
+    }
+    .comment-box textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+    .comment-box button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="foto13.png.png" alt="foto1" width="300" height="300">
+    <div>
+      <a href="Motos deportivas.html">Motos Deportivas</a>|
+      <a href="Motos MotoCross.html">MotoCross</a>|
+      <a href="Motos Adventure.html">Motos Adventure</a>|
+      <a href="Motos Accesibles.html">Motos Economicas</a>|
+      <a href="Cascos.html">Cascos</a>
+    </div>
+  </header>
+  <video autoplay loop muted width="100%">
+    <source src="video3.jpg.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de videos.
+  </video>
+  <nav>
+    <h1>HISTORIA DE LAS MOTOS</h1>
+  </nav>
+  <ul>
+    <li><strong>SIGLO XIX</strong> Aunque hay disputas sobre quién inventó la primera motocicleta, muchas personas atribuyen la invención a Gottlieb Daimler y Wilhelm Maybach en 1885. Construyeron un vehículo de dos ruedas con un motor de combustión interna.</li>
+    <li><strong>PRINCIPIOS DEL SIGLO XX</strong> La motocicleta comenzó a popularizarse con la producción en masa. Marcas icónicas como Harley-Davidson (fundada en 1903) y Indian Motorcycle (fundada en 1901) surgieron en esta época.</li>
+    <li><strong>DECADA DE 1920</strong> Se establecieron muchas empresas europeas, como BMW y Triumph, que siguen siendo marcas populares en la actualidad.</li>
+    <li><strong>SEGUNDA GUERRA MUNDIAL</strong> Las motocicletas jugaron un papel importante en la guerra, especialmente en la movilidad militar.</li>
+    <li><strong>DESPUES DE LA SEGUNDA GUERRA MUNDIAL</strong> Hubo un auge en la popularidad de las motocicletas, impulsado en parte por veteranos que buscaban la emoción y la libertad que ofrecían.</li>
+    <li><strong>DECADA DE 1950-1960</strong> La cultura de las motocicletas creció aún más con películas como "The Wild One" (1953) protagonizada por Marlon Brando y "Easy Rider" (1969) protagonizada por Peter Fonda y Dennis Hopper.</li>
+    <li><strong>DECADA DE 1970</strong> La tecnología y el diseño de las motocicletas siguieron avanzando, con la introducción de modelos más potentes y aerodinámicos.</li>
+    <li><strong>SIGLO XXI</strong> Las motocicletas han seguido evolucionando con avances en tecnología, seguridad y diseño. También ha habido un crecimiento en la popularidad de motocicletas eléctricas y modelos más orientados a la eficiencia energética.</li>
+    <li><strong>RESUMEN</strong> sLa historia de las motocicletas es una mezcla de ingeniería innovadora, cultura popular y pasión por la velocidad y la libertad.</li>
+  </ul>
+
+  <div class="comment-box">
+    <h2>Deja tu comentario</h2>
+    <form>
+      <textarea rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2023 MAQUINAS AL ASFALTO. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
+```
+
